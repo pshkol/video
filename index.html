@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./icons/play.svg" sizes="any">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="./js/main.js" type="module" defer></script>
+    <title>Video</title>
+</head>
+<body>
+    <section class="video-module">
+        <video src="./multimedia/BigBuckBunny.mp4" class="video-module__video"></video>
+        <div class="controls">
+            <div class="controls__container">
+                <div class="controls__pp pp">
+                    <img class="pp__play" src="./icons/play.svg" alt="Play">
+                    <img class="pp__pause" src="./icons/pause.svg" alt="Pause">
+                </div>
+                <p class="controls__currentTime">0:00</p>
+                <div class="controls__timeline timeline">
+                    <div class="timeline__line"></div>
+                    <div class="timeline__pointer"></div>
+                    <div class="timeline__target">0:00</div>
+                    <div class="timeline__hover"></div>
+                </div>
+                <p class="controls__duration">0:00</p>
+                <div class="controls__volume volume">
+                    <img class="volume__icon" src="./icons/volume.svg" alt="Volume">
+                    <div class="volume__container">
+                        <div class="volume__line"></div>
+                        <div class="volume__pointer"></div>
+                        <div class="volume__target">100%</div>
+                        <div class="volume__hover"></div>
+                    </div>
+                </div>
+                <img class="controls__fullscreen" src="./icons/fullscreen.png" alt="Full Screen">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

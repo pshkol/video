@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .volume {
+    display: flex;
+    align-items: center;
+}
+
+.volume__container {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5%;
+    cursor: pointer;
+}
+
+.volume__icon {
+    width: 15%;
+    height: 60%;
+}
+
+.volume__line {
+    height: 0.1875rem;
+    background-color: black;
+    width: 100%;
+    border-radius: 3px;
+    transition: all .2s;
+}
+
+.volume__container:hover .volume__line {
+    transform: scaleY(1.3);
+}
+
+.volume__pointer {
+    width: 0.625rem;
+    height: 0.625rem;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    transition: all .2s linear;
+}
+
+
+.volume__container:hover .volume__pointer {
+    transform: scale(1.4);
+}
+
+.volume__target {
+    position: absolute;
+    top: -0.625rem;
+    border-radius: 0.625rem;
+    text-align: center;
+    left: 0;
+    background: black;
+    color: white;
+    padding: 0 5px;
+    border: 1px solid red;
+    display: none;
+}
+
+.volume__hover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+    </style>
+</head>
+<body>
+    <div class="controls__volume volume">
+        <img class="volume__icon" src="./icons/volume.svg" alt="Volume">
+        <div class="volume__container">
+            <div class="volume__line"></div>
+            <div class="volume__pointer"></div>
+            <div class="volume__target">100%</div>
+            <div class="volume__hover"></div>
+        </div>
+    </div>
+</body>
+</html>
